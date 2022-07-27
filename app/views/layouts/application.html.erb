@@ -21,13 +21,14 @@
 
   </head>
   <body>
+    <%# <div class="p-3 mb-2 bg-dark text-white"> %>
+      <%= render 'home/header' %>
 
-    <%= render 'home/header' %>
+      <div class="container">
+        <br/>
+        <%= yield %>
+      </div>
 
-    <div class="container">
-      <br/>
-      <%= yield %>
-    </div>
     <!-- Optional JavaScript; choose one of the two! --> <!-- Option 1:
     Bootstrap Bundle with Popper -->
     <script
